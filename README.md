@@ -1,7 +1,5 @@
 ## EagleJS
 
-EagleJS 是凌志软件移动(Eagle)连接Html5和Native应用的桥梁.
-
 ## 是什么
 
 > EagleJS 是凌志软件移动(Eagle)连接Html5和Native应用的桥梁.
