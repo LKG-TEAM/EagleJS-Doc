@@ -296,15 +296,13 @@ EagleBridge.openWindow({
 可以通过`closeWindow`方法来实现。
 
 ```javascript
-EagleBridge.closeWindow({
-   data: "string"  //选填
-});
+EagleBridge.closeWindow(params);
 ```
 
 
 ### 参数
 
-- data:        `String`| `选填`  传递给前一个页面的值。
+- params:        `String` or `Object` | `选填`  传递给前一个页面的值。
 
 > 直接关闭当前页面
 
@@ -316,7 +314,9 @@ EagleBridge.closeWindow();
 
 ```javascript
 EagleBridge.closeWindow({
-   data: "string"
+   number: 15
 });
+
+EagleBridge.closeWindow("testString");
 ```
 
