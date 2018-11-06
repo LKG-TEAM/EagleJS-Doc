@@ -97,9 +97,9 @@ EagleBridge.setNavBarStyle({
 
 ```javascript
 EagleBridge.setOptionMenu({
-     expandable: true,          // 是否可以收起
      menus:[{
-        title:"标题",             // 文字 （只显示两个字宽度）
+        expandable: true,       // 是否可以收起
+        title:"标题",            // 文字 （只显示两个字宽度）
         icon:"\ue6aa",          // iconfont Unicode编码,
         size:"16",              //字体大小      `可不传`
         color:"#ff0000",        //图标或字体颜色 `可不传`
@@ -111,16 +111,25 @@ EagleBridge.setOptionMenu({
 
 ### 参数
 
-- expandable:  `Boolean` | `选填` | `默认: false` 是否可以收起
 - menus:       `Array`   | `选填` 数组类型, 可传入多个按钮。
 - success:     `Function`| `选填` 回调函数,接收点击传入指定。resp接收的是索引。
 
-
+>`menus`属性, 超过两个，则右上角显示`第一个` 按钮以及 `+`。如果想所有的都收起来，则每个按钮需要设置`expandable`属性。
 >`expandable`属性, 默认false。 传入true后，即右上角变成 `+`，点击弹出窗口，类似微信。
 
 ```javascript
 EagleBridge.setOptionMenu({
-    expandable: true,
+     menus:[{
+                title:"标题1"           // 文字 （只显示两个字宽度）
+            },
+            {
+                expandable: true,       // 是否可以收起
+                title:"标题2"           // 文字 （只显示两个字宽度）
+            },
+            {
+                expandable: true,       // 是否可以收起
+                title:"标题3"           // 文字 （只显示两个字宽度）
+            }]
 });
 ```
 

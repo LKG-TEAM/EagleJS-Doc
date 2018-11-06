@@ -1,6 +1,6 @@
 # 快速开始
 
-我们只需在 `index.html` 文件中引入`eagle.sdk.js`文件即可。
+我们只需在 `index.html` 文件中引入`eagle.js`文件即可。
 
 
 ## 初始化
@@ -13,7 +13,7 @@ document.addEventListener("deviceReady", function (e) {});
 
 ## 引入文件
 
-在`html` `head`引入`eagle.sdk.js`, 即初始化完成。
+在`html` `head`引入`eagle.js`, 即初始化完成。
 
 ```javascript
 <script src="eagle.sdk.js"></script>
